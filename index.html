@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoreKit | Hammasi Bittada</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <h1 class="logo">Prisma <span>JS</span></h1>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#apps">Apps</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header">
+      <h1 class="logo-text">Prisma <span>JS</span></h1>
+      <p>Essential tools. Pure Javascript</p>
+      <div class="search-wrap">
+        <div class="search-box">
+          <span class="icon">🔍</span>
+          <input type="text" placeholder="Search apps..." />
+        </div>
+      </div>
+    </div>
+    <section class="app-container">
+      <div class="card" onclick="openApp('todo')">
+        <div class="card-icon">📝</div>
+        <h3>Todo List</h3>
+        <p>Vazifalarni tartiblash</p>
+      </div>
+      <div class="card" onclick="openApp('weather')">
+        <div class="card-icon">☀️</div>
+        <h3>Weather</h3>
+        <p>Ob-havo ma'lumotlari</p>
+      </div>
+    </section>
+  </body>
+</html>
