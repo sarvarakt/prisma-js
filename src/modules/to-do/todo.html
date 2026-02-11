@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prisma JS - Todo List</title>
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <h1 class="logo" style="cursor: pointer;" onclick="window.location.href='/index.html';">Prisma <span>JS</span></h1>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#footer">About</a></li>
+      </ul>
+    </nav>
+    <div class="todo-wrapper">
+      <a href="../../../index.html" class="back-btn">← Back to Dashboard</a>
+      <div class="todo-container">
+        <h2>To-Do List</h2>
+        <p>Vazifalaringizni tartiblang va samaradorlikni oshiring.</p>
+        <div class="input-group">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="Yangi vazifa qo'shing..."
+          />
+          <button id="add-btn" onclick="addTask()">Qo'shish</button>
+        </div>
+        <ul id="todo-list"></ul>
+      </div>
+    </div>
+    <script src="todo.js"></script>
+  </body>
+</html>
