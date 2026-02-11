@@ -123,6 +123,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
     padding: 50px 10%;
+    margin-top: -50px;
 }
 
 .card {
@@ -146,6 +147,10 @@ body {
     padding: 80px 20px;
     display: flex;
     justify-content: center;
+}
+
+#contact-form {
+  margin-top: 20px;
 }
 
 .contact-container {
@@ -179,7 +184,7 @@ body {
     background: #fff;
     outline: none;
     transition: 0.3s;
-    box-sizing: border-box; /* Padding ichkarida qolishi uchun */
+    box-sizing: border-box; 
 }
 
 .input-group input:focus, 
@@ -191,7 +196,7 @@ body {
 .submit-btn {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(135deg, #ff5f6d, #ffc371); /* Prisma JS logosidagi ranglar */
+    background: linear-gradient(135deg, #ff5f6d, #ffc371); 
     color: white;
     border: none;
     border-radius: 8px;
@@ -204,4 +209,59 @@ body {
 .submit-btn:hover {
     transform: translateY(-2px);
     opacity: 0.9;
+}
+
+#footer {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    color: #34d399; 
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff5f6d;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
 }

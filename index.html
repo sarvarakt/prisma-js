@@ -14,10 +14,10 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#footer">About</a></li>
       </ul>
     </nav>
-    <div class="header">
+    <div id="home" class="header">
       <h1 class="logo-text">Prisma <span>JS</span></h1>
       <p>Essential tools. Pure Javascript</p>
       <div class="search-wrap">
@@ -27,7 +27,7 @@
         </div>
       </div>
     </div>
-    <section class="app-container">
+    <section id="apps" class="app-container">
       <div class="card" onclick="openApp('todo')">
         <div class="card-icon">📝</div>
         <h3>Todo List</h3>
@@ -68,5 +68,28 @@
         <div id="form-status"></div>
     </div>
 </section>
+  <footer id="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>Prisma JS</h3>
+            <p>Pure JavaScript yordamida yaratilgan foydali asboblar to'plami. Biz soddalik va tezlikni qadrlaymiz.</p>
+        </div>
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#apps">Apps</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section socials">
+            <h3>Follow Us</h3>
+            <p>Telegram | GitHub | Instagram</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Prisma JS. All rights reserved.
+    </div>
+</footer>
   </body>
 </html>
