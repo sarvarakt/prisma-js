@@ -13,9 +13,8 @@
       </div>
       <ul class="nav-links" id="navLinks">
         <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#apps">Apps</a></li>
-        <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
       </ul>
     </nav>
     <div class="header">
@@ -39,6 +38,35 @@
         <h3>Weather</h3>
         <p>Ob-havo ma'lumotlari</p>
       </div>
+      <div class="card" onclick="openApp('weather')">
+        <div class="card-icon">🧮</div>
+        <h3>Calculator</h3>
+        <p>Hisob kitob uchun oddiy kalkulyator</p>
+      </div>
+      <div class="card" onclick="openApp('weather')">
+        <div class="card-icon">💱</div>
+        <h3>Valyuta Konvertor</h3>
+        <p>Valyuta ayirboshlash uchun ilova</p>
+      </div>
     </section>
+    <section id="contact" class="contact-section">
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>Savollaringiz bormi? Bizga xabar qoldiring.</p>
+        <form id="contact-form">
+            <div class="input-group">
+                <input type="text" id="name" name="name" placeholder="Ismingiz" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="Email manzilingiz" required>
+            </div>
+            <div class="input-group">
+                <textarea id="message" name="message" placeholder="Xabaringizni yozing..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Xabarni yuborish</button>
+        </form>
+        <div id="form-status"></div>
+    </div>
+</section>
   </body>
 </html>
