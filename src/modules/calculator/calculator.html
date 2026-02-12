@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prisma JS - Todo List</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <h1 class="logo" style="cursor: pointer;" onclick="window.location.href='/index.html';">Prisma <span>JS</span></h1>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#footer">About</a></li>
+      </ul>
+    </nav>
+    
+    <div class="calculator-container">
+    <a href="../../../index.html" class="back-btn">← Back to Dashboard</a>
+    <div class="calc-display">
+        <div id="previous-operand" class="previous-operand"></div>
+        <div id="current-operand" class="current-operand">0</div>
+    </div>
+    <div class="calc-buttons">
+        <button onclick="clearDisplay()" class="btn-alt">AC</button>
+        <button onclick="deleteNumber()" class="btn-alt">DEL</button>
+        <button onclick="appendOperator('/')" class="btn-op">÷</button>
+        <button onclick="appendOperator('*')" class="btn-op">×</button>
+        
+        <button onclick="appendNumber('7')">7</button>
+        <button onclick="appendNumber('8')">8</button>
+        <button onclick="appendNumber('9')">9</button>
+        <button onclick="appendOperator('-')" class="btn-op">−</button>
+        
+        <button onclick="appendNumber('4')">4</button>
+        <button onclick="appendNumber('5')">5</button>
+        <button onclick="appendNumber('6')">6</button>
+        <button onclick="appendOperator('+')" class="btn-op">+</button>
+        
+        <button onclick="appendNumber('1')">1</button>
+        <button onclick="appendNumber('2')">2</button>
+        <button onclick="appendNumber('3')">3</button>
+        <button onclick="appendNumber('.')">.</button>
+        
+        <button onclick="appendNumber('0')">0</button>
+        <button onclick="compute()" class="span-three btn-equals">=</button>
+    </div>
+</div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
