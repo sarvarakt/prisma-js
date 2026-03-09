@@ -19,15 +19,17 @@
     </nav>
     
     <form id="change-location">
-      <label class="mb-2" for="city">
+      <label for="city">
         Enter a location for weather information
       </label>
       <input 
         type="text"
         name="city"
-        class="form-control"
+        id="form-control"
         autocomplete="off"
       />
+      <button class="submit-city" type="submit">send</button>
+      <div class="return"></div>
     </form>
 
     <script src="weather.js"></script>
